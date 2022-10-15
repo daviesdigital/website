@@ -1,0 +1,1694 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@font-face {
+  font-family: "Sharp Grotesk Book 20";
+  src: url("/Fonts/sharp_grotesk_book_20_regular-webfont.woff2") format("woff2"), url("/Fonts/sharp_grotesk_book_20_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SuisseIntl-Bold";
+  src: url("/Fonts/suisseintl-bold-webfont.woff2") format("woff2"), url("/Fonts/suisseintl-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SuisseIntl-Book";
+  src: url("/Fonts/suisseintl-book-webfont.woff2") format("woff2"), url("/Fonts/suisseintl-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SuisseIntl-SemiBold";
+  src: url("/Fonts/suisseintl-semibold-webfont.woff2") format("woff2"), url("/Fonts/suisseintl-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SuisseIntl-Thin";
+  src: url("/Fonts/suisseintl-thin-webfont.woff2") format("woff2"), url("/Fonts/suisseintl-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SuisseIntl-Light";
+  src: url("/Fonts/SuisseIntl-Light.woff2") format("woff2"), url("/Fonts/SuisseIntl-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+* *:focus {
+  outline-style: none;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+.body-black-wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+*/
+@media screen and (max-width: 991px) {
+  .wrapper {
+    padding: 0 10%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .button-wrapper {
+    display: block;
+    padding: 1em 0;
+  }
+  .button-wrapper a {
+    border: solid 2px #0056ff;
+    background-color: #0056ff;
+    padding: 1em 2em;
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+  }
+  .button-wrapper-alt {
+    display: block;
+    padding: 1em 0;
+  }
+  .button-wrapper-alt a {
+    border: solid 2px #0056ff;
+    padding: 1em 2em;
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 0.8em;
+    color: #0056ff;
+    text-decoration: none;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    padding: 0 10%;
+    width: 100vw;
+    background-color: white;
+    z-index: 10000;
+  }
+  .navbar .navbar-brand {
+    width: 40%;
+    max-width: 300px;
+    justify-content: left;
+  }
+  .navbar .navbar-brand .logo-full__blue {
+    width: 100%;
+    justify-content: left;
+  }
+  .navbar .container-fluid {
+    justify-content: space-between;
+    padding: 0;
+    padding-bottom: 1em;
+    border-bottom: solid black 2.5px;
+    margin: 0;
+    width: 100%;
+  }
+  .navbar .container-fluid .navbar-toggler,
+.navbar .container-fluid .navbar-toggler:focus,
+.navbar .container-fluid .navbar-toggler:active,
+.navbar .container-fluid .navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  .navbar .container-fluid .collapse {
+    margin: auto;
+    padding: 0;
+    background-color: #0056ff;
+  }
+  .navbar .container-fluid .collapse .nav-item {
+    padding: 1em 0;
+    color: white;
+  }
+  .navbar .container-fluid .collapse .nav-item .nav-link {
+    color: white;
+    margin-left: 1.5em;
+    font-family: "SuisseIntl-SemiBold";
+  }
+  .navbar .container-fluid .collapse .nav-item:hover {
+    background-color: #0246cf;
+  }
+  .navbar-white {
+    position: fixed;
+    top: 0;
+    padding: 0 5%;
+    width: 100vw;
+    background-color: black;
+    overflow-x: hidden !important;
+    z-index: 10000;
+  }
+  .navbar-white .navbar-brand {
+    width: 40%;
+    max-width: 300px;
+    justify-content: left;
+  }
+  .navbar-white .navbar-brand .logo-full__blue {
+    width: 100%;
+    justify-content: left;
+  }
+  .navbar-white .container-fluid {
+    justify-content: space-between;
+    padding-bottom: 1em;
+    border-bottom: solid white 2px;
+    margin: 0;
+  }
+  .navbar-white .container-fluid .navbar-toggler,
+.navbar-white .container-fluid .navbar-toggler:focus,
+.navbar-white .container-fluid .navbar-toggler:active,
+.navbar-white .container-fluid .navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  .navbar-white .container-fluid .collapse {
+    margin: auto;
+    padding: 0;
+    background-color: #0056ff;
+  }
+  .navbar-white .container-fluid .collapse .nav-link {
+    color: white;
+    font-family: "SuisseIntl-SemiBold";
+  }
+  .navbar-white .container-fluid .collapse .nav-link {
+    color: white;
+    margin-left: 1.5em;
+    transition: all 0.2s ease-in-out;
+  }
+  .navbar-white .container-fluid .collapse .nav-link:hover {
+    color: #0056ff;
+  }
+  .footer-content {
+    padding: 15px 0 15px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+    border-top: solid 2.5px;
+  }
+  .footer-content .logo__blue {
+    height: 30px;
+    width: 100%;
+  }
+  .footer-content ul {
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+  }
+  .footer-content ul li {
+    font-size: 1em;
+    font-family: "SuisseIntl-Book";
+  }
+  .footer-content ul li a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .footer-white {
+    padding: 15px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    border-top: solid 2px white;
+  }
+  .footer-white .logo__white {
+    height: 30px;
+    width: 100%;
+  }
+  .footer-white ul {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    color: white;
+  }
+  .footer-white ul li {
+    font-size: 1em;
+    font-family: "SuisseIntl-Book";
+  }
+  .footer-white ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  .hero-section {
+    position: relative;
+    height: 110vh;
+    padding-top: 20%;
+  }
+  .hero-section .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-section .column {
+    margin: auto;
+    text-align: center;
+  }
+  .hero-section .hero-content {
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    margin-right: -150px;
+    width: auto;
+    max-width: 300px;
+  }
+  .hero-section h1 {
+    font-family: "SuisseIntl-SemiBold";
+    font-size: 2em;
+    line-height: 1em;
+  }
+  .hero-section h2 {
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 0.95em;
+    line-height: 1.4;
+  }
+  .hero-section .button-wrapper a {
+    padding: 1em 4em;
+  }
+  .hero-section .three-screens {
+    margin: auto;
+  }
+  .hero-section img {
+    height: auto;
+    max-width: 140px;
+    top: 16%;
+    left: 50%;
+    margin-left: -70px;
+  }
+  .hero-section .hero-img-top {
+    position: absolute;
+    transform: translate(50px, -40px);
+  }
+  .hero-section .hero-img-mid {
+    position: absolute;
+  }
+  .hero-section .hero-img-bottom {
+    position: absolute;
+    transform: translate(-50px, 15px);
+  }
+  .Checkusout {
+    display: flex;
+    padding: 35% 0;
+  }
+  .Checkusout h1 {
+    width: 100%;
+    text-align: center;
+    font-family: "SuisseIntl-SemiBold";
+    font-size: 2.8em;
+    padding-bottom: 0.5em;
+  }
+  .Checkusout .button-wrapper {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0.05em;
+  }
+  .service-preview {
+    color: white;
+  }
+  .service-preview .row {
+    display: block;
+  }
+  .service-preview .col {
+    margin: auto;
+    padding: 10% 4em;
+  }
+  .service-preview h1 {
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 1.4;
+    padding-bottom: 0.5em;
+  }
+  .service-preview h3 {
+    font-family: "SuisseIntl-Thin";
+    font-size: 1.5;
+  }
+  .testimonials {
+    color: white;
+    padding: 10% 1em;
+    text-align: center;
+    background-color: #0056ff;
+    min-height: 60vh;
+  }
+  .testimonials h2 {
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 1, 5em;
+    line-height: 1.4;
+  }
+  .testimonials h3 {
+    font-family: "SuisseIntl-Thin";
+    font-size: 1.5;
+  }
+  .testimonials .carousel-control-next {
+    width: auto;
+  }
+  .testimonials .carousel-control-prev {
+    width: auto;
+  }
+  .testimonials .carousel-inner {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+  }
+  .contactus {
+    scroll-behavior: smooth;
+    padding-top: 3em;
+  }
+  .contactus .contact-title {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    margin-bottom: 20%;
+  }
+  .contactus .contact-title h1 {
+    font-family: "SuisseIntl-SemiBold";
+    font-size: 4em;
+    text-align: center;
+    line-height: 1;
+  }
+  .contactus .contact-title ul {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .contactus .contact-title ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-family: "SuisseIntl-SemiBold";
+  }
+  .contactus .form-block {
+    display: block;
+    padding: 0 0 10% 0;
+  }
+  .contactus .form-block label {
+    font-family: "Sharp Grotesk Book 20";
+    font-size: 0.95em;
+    font-weight: 900;
+  }
+  .contactus .form-block input[type=text], .contactus .form-block input[type=email], .contactus .form-block input[type=tel] {
+    border: none;
+    border-bottom: solid 3.5px black;
+    padding: 0 1em 0.5em 1em;
+    margin: 1em 0 2em 0;
+    width: 100%;
+    font-family: "SuisseIntl-Thin";
+    font-size: 0.95em;
+    font-weight: 900;
+  }
+  .contactus .form-block textarea {
+    border: none;
+    border-bottom: solid 3.5px black;
+    width: 100%;
+    margin: 1em 0 2em 0;
+    padding: 0em 1em 5em 1em;
+    resize: vertical;
+    font-family: "SuisseIntl-Thin";
+    font-size: 0.95em;
+    font-weight: 900;
+  }
+  .contactus .form-block input:focus, .contactus .form-block textarea:focus {
+    border-bottom: solid 3.5px #0056ff;
+  }
+  .contactus .form-block input[type=submit] {
+    display: block;
+    margin: auto;
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 0.95em;
+    background-color: #0056ff;
+    border: none;
+    color: white;
+    padding: 1em 6em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .contactus .form-block input[type=submit]:hover {
+    background-color: #0035ff;
+  }
+  .about-header {
+    padding: 30% 10%;
+    display: block;
+    margin: auto;
+  }
+  .about-header h1 {
+    font-family: "SuisseIntl-Bold";
+    font-size: 4.5em;
+    margin: auto;
+    text-align: center;
+  }
+  .about-header p {
+    font-family: "SuisseIntl-Light";
+    font-size: 20px;
+    text-align: center;
+  }
+  .design-language {
+    display: none;
+  }
+  .design-language .accordion__div {
+    padding: 5% 5%;
+  }
+  .design-language .accordion {
+    width: 100%;
+    background: 0;
+    border: none;
+    display: flex;
+    text-decoration: none;
+  }
+  .design-language .accordion img {
+    height: 3em;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .design-language .accordion h1 {
+    white-space: nowrap;
+    font-family: "SuisseIntl-SemiBold";
+    font-size: 4em;
+    padding: 0 0.5em;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  .design-language .accordion .line-wrapper {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .design-language .accordion .line-wrapper .line-divider {
+    height: 3.5px;
+    border: solid;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+  }
+  .design-language .accordion.active img {
+    transform: rotate(45deg);
+  }
+  .design-language .accordion.active .line-divider {
+    border: solid #0056ff;
+  }
+  .design-language .accordion:hover .line-divider {
+    border: solid #0056ff;
+  }
+  .design-language .accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease-in-out 0.3s;
+  }
+  .design-language .accordion__content p {
+    padding: 0 10%;
+    font-family: "SuisseIntl-Light";
+    font-size: 20px;
+  }
+  .design-language button.accordion__header {
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #444;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+  }
+  .design-language .accordion__design {
+    background-color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 20%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+  .lets-work {
+    padding-top: 30%;
+  }
+  .lets-work .Lets-work-title {
+    padding-bottom: 30px;
+  }
+  .lets-work .Lets-work-title h1 {
+    font-family: "SuisseIntl-Bold";
+    font-size: 3.5em;
+    line-height: 1em;
+    margin: auto;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  .lets-work .Lets-work-title h2 {
+    font-family: "SuisseIntl-Thin";
+    font-size: 1em;
+    margin: auto;
+    text-align: center;
+  }
+  .lets-work .form-block {
+    display: block;
+    padding: 0 0 15% 0;
+    margin: auto;
+  }
+  .lets-work .form-block label {
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 900;
+    font-size: 0.95em;
+  }
+  .lets-work .form-block input[type=text], .lets-work .form-block input[type=email], .lets-work .form-block input[type=tel] {
+    border: none;
+    border-bottom: solid 3.5px black;
+    padding: 0 1em 0.5em 1em;
+    margin: 1em 0 2em 0;
+    font-family: "SuisseIntl-Thin";
+    font-size: 0.95em;
+    font-weight: 900;
+    width: 100%;
+  }
+  .lets-work .form-block textarea {
+    border: none;
+    border-bottom: solid 3.5px black;
+    margin: 1em 0 2em 0;
+    padding: 0em 1em 5em 1em;
+    width: 100%;
+    resize: vertical;
+    font-family: "SuisseIntl-Thin";
+    font-size: 0.95em;
+    font-weight: 900;
+  }
+  .lets-work .form-block input:focus, .lets-work .form-block textarea:focus {
+    border-bottom: solid 3.5px #0056ff;
+  }
+  .lets-work .form-block input[type=submit] {
+    display: block;
+    margin: auto;
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #0056ff;
+    border: none;
+    color: white;
+    padding: 1em 6em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .lets-work .form-block input[type=submit]:hover {
+    background-color: #0035ff;
+  }
+  .scroll-carousel {
+    padding-top: 20%;
+  }
+  .scroll-carousel .row- {
+    display: flex;
+    clear: both;
+  }
+  .scroll-carousel .column-left {
+    display: table-cell;
+    float: left;
+    width: 30%;
+    padding-top: 2%;
+  }
+  .scroll-carousel .column-left h1 {
+    font-family: "SuisseIntl-Bold";
+    font-size: 1.5em;
+    letter-spacing: auto;
+    color: white;
+  }
+  .scroll-carousel .column-left .portfolio-menu {
+    font-family: "Sharp Grotesk Book 20";
+    position: -webkit- -webkit-sticky;
+    position: -webkit- sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70vh;
+    padding-bottom: 10px;
+  }
+  .scroll-carousel .column-left .portfolio-menu ul {
+    padding: 0;
+    list-style: none;
+  }
+  .scroll-carousel .column-left .portfolio-menu ul li {
+    padding: 5px 0;
+  }
+  .scroll-carousel .column-left .portfolio-menu ul li a:active {
+    color: white;
+    font-size: 1em;
+  }
+  .scroll-carousel .column-left .portfolio-menu ul li a:hover {
+    color: #0056ff;
+    font-size: 0.9em;
+  }
+  .scroll-carousel .column-left .portfolio-menu ul li a {
+    color: white;
+    font-size: 1em;
+    transition: all 0.3s ease;
+  }
+  .scroll-carousel .column-right {
+    display: table-cell;
+    float: right;
+    padding-left: 15%;
+  }
+  .scroll-carousel .column-right h4 {
+    color: white;
+    font-family: "Roboto Mono";
+    font-size: 0.5em;
+    margin-bottom: 8em;
+  }
+  .scroll-carousel .column-right .branding-section {
+    padding-top: 5%;
+    scroll-behavior: smooth;
+  }
+  .scroll-carousel .column-right .imagebox {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  .scroll-carousel .column-right .imagebox img {
+    margin-bottom: 1em;
+  }
+  .scroll-carousel .column-right .imagebox-padded {
+    text-align: center;
+    padding: 0 5%;
+    margin-bottom: 4em;
+    width: 100%;
+  }
+  .scroll-carousel .column-right .imagebox-padded img {
+    margin-bottom: 10px;
+    max-width: 40vw;
+  }
+  .scroll-carousel .column-right .line-wrapper {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  .scroll-carousel .column-right .line-wrapper .line-divider {
+    height: 1px;
+    border: solid white 1px;
+  }
+  .scroll-carousel .column-right .album-covers {
+    scroll-behavior: smooth;
+  }
+  .scroll-carousel .column-right .album-covers .imagebox-padded {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  .scroll-carousel .column-right .album-covers .imagebox-padded img {
+    margin-bottom: 0.5em;
+    width: 100%;
+  }
+  .scroll-carousel .column-right .website-section {
+    scroll-behavior: smooth;
+  }
+  .scroll-carousel .column-right .website-section a img {
+    border-radius: 8px;
+    transition: all ease-in-out 0.2s;
+    width: 100%;
+  }
+  .scroll-carousel .column-right .website-section a img img:hover {
+    border: solid 4px #0056ff;
+  }
+  .Portfolio-Title {
+    text-align: center;
+    color: white;
+    margin-top: 5em;
+  }
+  .Portfolio-Title h1 {
+    font-family: "SuisseIntl-Bold";
+    font-size: 4em;
+  }
+  .Menu {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 6.4vh;
+    background: #000000;
+    z-index: 1000;
+  }
+  .Menu .Menu-wrapper {
+    color: white;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+  }
+  .Menu .Menu-wrapper h2 {
+    font-family: "Sharp Grotesk Book 20";
+  }
+  .Menu .Menu-wrapper a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+  .Menu .Menu-wrapper a h2 {
+    font-size: 0.8em;
+  }
+  .Menu .Menu-wrapper a:hover {
+    color: #0056ff;
+  }
+  .Menu .Menu-wrapper a:active {
+    color: #0056ff;
+  }
+  .portfolio-section {
+    margin-bottom: 4em;
+  }
+  .portfolio-section .line-divide {
+    margin-bottom: 4em;
+    height: 3px;
+    background-color: white;
+  }
+  .portfolio-section .showcase-box {
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+  }
+  .portfolio-section .showcase-box .Blur-wrap {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5019607843);
+  }
+  .portfolio-section .showcase-box .Blur-wrap h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 5em;
+    color: white;
+  }
+  .portfolio-section .showcase-box .showcase-background {
+    padding: 5% 10%;
+  }
+  .portfolio-section .showcase-box .image-wrapper {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+  }
+  .portfolio-section .showcase-box .image-wrapper img {
+    height: auto;
+    width: 100%;
+    max-height: 50vh;
+  }
+  .portfolio-section .showcase-box .image-wrapper-album {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+  }
+  .portfolio-section .showcase-box .image-wrapper-album img {
+    height: auto;
+    max-height: 40vh;
+  }
+  .portfolio-section .showcase-box:hover {
+    transition: 2s opacity ease-in-out;
+    -webkit-transition: 2s -webkit-opacity ease-in-out;
+    -moz-transition: 2s -moz-opacity ease-in-out;
+    -ms-transition: 2s -ms-opacity ease-in-out;
+    -o-transition: 2s -o-opacity ease-in-out;
+  }
+  .portfolio-section .showcase-box:hover .Blur-wrap {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper {
+    padding: 0 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .button-wrapper {
+    display: block;
+    padding: 1em 0;
+  }
+  .button-wrapper a {
+    border: solid 2px #0056ff;
+    background-color: #0056ff;
+    padding: 1em 2em;
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+  }
+  .button-wrapper a:hover {
+    border: solid 2px #004adf;
+    background-color: #004adf;
+    transition: 0.1s ease-in-out;
+  }
+  .button-wrapper-alt {
+    display: block;
+    padding: 2em 0;
+  }
+  .button-wrapper-alt a {
+    border: solid 2px #0056ff;
+    padding: 1em 2em;
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 1em;
+    color: #0056ff;
+    text-decoration: none;
+  }
+  .button-wrapper-alt a:hover {
+    border: solid 2px #0056ff;
+    background-color: #0056ff;
+    color: white;
+    transition: all ease-in-out 0.1s;
+  }
+  .navbar {
+    margin: 0 10%;
+    padding-bottom: 0;
+  }
+  .navbar .navbar-brand {
+    width: 40%;
+    max-width: 300px;
+    justify-content: left;
+  }
+  .navbar .navbar-brand .logo-full__blue {
+    width: 100%;
+    justify-content: left;
+  }
+  .navbar .container-fluid {
+    justify-content: space-between;
+    padding-bottom: 1em;
+    border-bottom: solid black 2px;
+    margin: 0;
+    width: 100%;
+  }
+  .navbar .container-fluid .collapse {
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+    margin: auto;
+    margin-right: 0;
+  }
+  .navbar .container-fluid .collapse .navbar-nav {
+    margin: auto;
+    margin-right: 0;
+  }
+  .navbar .container-fluid .collapse .nav-link {
+    color: black;
+    font-family: "SuisseIntl-SemiBold";
+    margin-left: 1.5em;
+    transition: all 0.2s ease-in-out;
+  }
+  .navbar .container-fluid .collapse .nav-link:hover {
+    color: #0056ff;
+  }
+  .navbar-white {
+    margin: 0 10%;
+  }
+  .navbar-white .navbar-brand {
+    width: 40%;
+    max-width: 300px;
+    justify-content: left;
+  }
+  .navbar-white .navbar-brand .logo-full__blue {
+    width: 100%;
+    justify-content: left;
+  }
+  .navbar-white .container-fluid {
+    justify-content: space-between;
+    padding-bottom: 1em;
+    border-bottom: solid white 2px;
+    margin: 0;
+    width: 100%;
+  }
+  .navbar-white .container-fluid .collapse {
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+    margin: auto;
+  }
+  .navbar-white .container-fluid .collapse .navbar-nav {
+    margin: auto;
+    margin-right: 0;
+  }
+  .navbar-white .container-fluid .collapse .nav-link {
+    color: white;
+    font-family: "SuisseIntl-SemiBold";
+  }
+  .navbar-white .container-fluid .collapse .nav-link {
+    color: white;
+    margin-left: 1.5em;
+    transition: all 0.2s ease-in-out;
+  }
+  .navbar-white .container-fluid .collapse .nav-link:hover {
+    color: #0056ff;
+  }
+  footer {
+    padding: 1em 3em;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 2px;
+  }
+  footer .logo__blue {
+    height: 60%;
+    float: left;
+    margin-top: 0.5em;
+  }
+  footer ul {
+    float: right;
+    text-align: right;
+    list-style: none;
+  }
+  footer ul li {
+    font-size: 1em;
+    padding: 0 1.5em;
+    font-family: "SuisseIntl-SemiBold";
+  }
+  footer ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  .footer-white {
+    padding: 1em 3em;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 2px white;
+  }
+  .footer-white .logo__white {
+    height: 60%;
+    float: left;
+    margin-top: 0.5em;
+  }
+  .footer-white ul {
+    float: right;
+    text-align: right;
+    list-style: none;
+    color: white;
+  }
+  .footer-white ul li {
+    font-size: 1em;
+    padding: 0 1.5em;
+    font-family: "SuisseIntl-SemiBold";
+  }
+  .footer-white ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  .hero-section {
+    height: 88vh;
+    display: flex;
+    align-items: center;
+  }
+  .hero-section .column {
+    float: left;
+    width: 50%;
+    padding: 10% 5%;
+  }
+  .hero-section .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .hero-section h1 {
+    font-family: "SuisseIntl-SemiBold";
+    font-size: 3.5em;
+    line-height: 1em;
+  }
+  .hero-section h2 {
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  .hero-section .button-wrapper a {
+    padding: 1em 4em;
+  }
+  .hero-section img {
+    height: 40vh;
+  }
+  .hero-section .three-screens {
+    max-width: 30vw;
+  }
+  .hero-section .hero-img-top {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+  }
+  .hero-section .hero-img-mid {
+    position: absolute;
+    top: 35%;
+    right: 22%;
+  }
+  .hero-section .hero-img-bottom {
+    position: absolute;
+    top: 40%;
+    right: 30%;
+  }
+  .Checkusout {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+  }
+  .Checkusout h1 {
+    font-family: "SuisseIntl-SemiBold";
+    font-size: 5em;
+    padding: 0;
+    padding-bottom: 0.5em;
+  }
+  .Checkusout .button-wrapper {
+    padding: 0.05em;
+  }
+  .service-preview {
+    color: white;
+  }
+  .service-preview .col {
+    margin: auto;
+    height: 80vh;
+    padding: 10% 8%;
+    position: relative;
+  }
+  .service-preview h1 {
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 1.4;
+  }
+  .service-preview h3 {
+    font-family: "SuisseIntl-Thin";
+    font-size: 1.5em;
+  }
+  .service-preview .service-preview-button {
+    position: absolute;
+    bottom: 2em;
+    right: 5em;
+    display: flex;
+    justify-content: right;
+  }
+  .service-preview .service-preview-button a {
+    display: flex;
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+  }
+  .service-preview .service-preview-button a p {
+    padding: 0 0.5em;
+  }
+  .service-preview .service-preview-button a img {
+    max-height: 1.5em;
+  }
+  .testimonials {
+    color: white;
+    padding: 5% 10em;
+    background-color: #0056ff;
+  }
+  .testimonials h1 {
+    font-family: "SuisseIntl-SemiBold";
+    font-size: 3.5em;
+    line-height: 1em;
+  }
+  .testimonials h2 {
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 1.4;
+  }
+  .testimonials h3 {
+    font-family: "SuisseIntl-Thin";
+    font-size: 1.5;
+  }
+  .testimonials .carousel-control-next {
+    width: auto;
+  }
+  .testimonials .carousel-control-prev {
+    width: auto;
+  }
+  .testimonials .carousel-control-next {
+    width: auto;
+  }
+  .testimonials .carousel-control-prev {
+    width: auto;
+  }
+  .testimonials .carousel-inner {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .contactus {
+    scroll-behavior: smooth;
+  }
+  .contactus .contact-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    padding-top: 5em;
+    padding-bottom: 1em;
+  }
+  .contactus .contact-title h1 {
+    font-family: "SuisseIntl-SemiBold";
+    font-size: 4em;
+    line-height: 1;
+  }
+  .contactus .contact-title ul {
+    float: right;
+    list-style: none;
+    text-align: right;
+  }
+  .contactus .contact-title ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    padding: 0 1.5em;
+    font-family: "SuisseIntl-SemiBold";
+  }
+  .contactus .form-block {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 10% 5%;
+  }
+  .contactus .form-block label {
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 900;
+    width: 100%;
+  }
+  .contactus .form-block input[type=text], .contactus .form-block input[type=email], .contactus .form-block input[type=tel] {
+    border: none;
+    border-bottom: solid 3.5px black;
+    padding: 0 1em 0.5em 1em;
+    margin: 1em 0 2em 0;
+    width: 100%;
+    font-family: "SuisseIntl-Thin";
+    font-size: 1em;
+    font-weight: 900;
+  }
+  .contactus .form-block textarea {
+    border: none;
+    border-bottom: solid 3.5px black;
+    margin: 1em 0 2em 0;
+    padding: 0em 1em 5em 1em;
+    width: 100%;
+    resize: vertical;
+    font-family: "SuisseIntl-Thin";
+    font-size: 1em;
+    font-weight: 900;
+  }
+  .contactus .form-block input:focus, .contactus .form-block textarea:focus {
+    border-bottom: solid 3.5px #0056ff;
+  }
+  .contactus .form-block input[type=submit] {
+    display: block;
+    margin: auto;
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #0056ff;
+    border: none;
+    color: white;
+    padding: 1em 6em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .contactus .form-block input[type=submit]:hover {
+    background-color: #0035ff;
+  }
+  .about-header {
+    padding: 10% 10%;
+    display: block;
+    margin: auto;
+  }
+  .about-header h1 {
+    font-family: "SuisseIntl-Bold";
+    font-size: 4.5em;
+    margin: auto;
+  }
+  .about-header p {
+    font-family: "SuisseIntl-Light";
+    font-size: 20px;
+  }
+  .design-language {
+    display: none;
+  }
+  .design-language .accordion__div {
+    padding: 5% 5%;
+  }
+  .design-language .accordion {
+    width: 100%;
+    background: 0;
+    border: none;
+    display: flex;
+    text-decoration: none;
+  }
+  .design-language .accordion img {
+    height: 3em;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .design-language .accordion h1 {
+    white-space: nowrap;
+    font-family: "SuisseIntl-SemiBold";
+    font-size: 4em;
+    padding: 0 0.5em;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  .design-language .accordion .line-wrapper {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .design-language .accordion .line-wrapper .line-divider {
+    height: 3.5px;
+    border: solid;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+  }
+  .design-language .accordion.active img {
+    transform: rotate(45deg);
+  }
+  .design-language .accordion.active .line-divider {
+    border: solid #0056ff;
+  }
+  .design-language .accordion:hover .line-divider {
+    border: solid #0056ff;
+  }
+  .design-language .accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease-in-out 0.3s;
+  }
+  .design-language .accordion__content p {
+    padding: 0 10%;
+    font-family: "SuisseIntl-Light";
+    font-size: 20px;
+  }
+  .design-language button.accordion__header {
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #444;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+  }
+  .design-language .accordion__design {
+    background-color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 20%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+  .lets-work {
+    padding: 3% 5%;
+  }
+  .lets-work .column-left {
+    float: left;
+    width: 40%;
+    padding-top: 2%;
+  }
+  .lets-work .column-right {
+    float: left;
+    width: 60%;
+    padding-left: 10%;
+    padding-top: 3%;
+  }
+  .lets-work .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .lets-work .Lets-work-title h1 {
+    font-family: "SuisseIntl-Bold";
+    font-size: 4.5em;
+    line-height: 1em;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  .lets-work .Lets-work-title h2 {
+    font-family: "SuisseIntl-Thin";
+    font-size: 1.3em;
+    margin: auto;
+  }
+  .lets-work .form-block {
+    display: block;
+    padding: 0 5% 0 0;
+  }
+  .lets-work .form-block label {
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 900;
+  }
+  .lets-work .form-block input[type=text], .lets-work .form-block input[type=email], .lets-work .form-block input[type=tel] {
+    border: none;
+    border-bottom: solid 3.5px black;
+    padding: 0 1em 0.5em 1em;
+    margin: 1em 0 2em 0;
+    width: 100%;
+    font-family: "SuisseIntl-Thin";
+    font-size: 1em;
+    font-weight: 900;
+  }
+  .lets-work .form-block textarea {
+    border: none;
+    border-bottom: solid 3.5px black;
+    margin: 1em 0 2em 0;
+    padding: 0em 1em 5em 1em;
+    width: 100%;
+    resize: vertical;
+    font-family: "SuisseIntl-Thin";
+    font-size: 1em;
+    font-weight: 900;
+  }
+  .lets-work .form-block input:focus, .lets-work .form-block textarea:focus {
+    border-bottom: solid 3.5px #0056ff;
+  }
+  .lets-work .form-block input[type=submit] {
+    display: block;
+    margin: auto;
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #0056ff;
+    border: none;
+    color: white;
+    padding: 1em 6em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .lets-work .form-block input[type=submit]:hover {
+    background-color: #0035ff;
+  }
+  .scroll-carousel .row- {
+    display: flex;
+    clear: both;
+  }
+  .scroll-carousel .column-left {
+    display: table-cell;
+    float: left;
+    width: 40%;
+    padding-top: 2%;
+  }
+  .scroll-carousel .column-left h1 {
+    font-family: "SuisseIntl-Bold";
+    font-size: 4.5em;
+    letter-spacing: auto;
+    color: white;
+  }
+  .scroll-carousel .column-left .portfolio-menu {
+    font-family: "Sharp Grotesk Book 20";
+    position: -webkit- -webkit-sticky;
+    position: -webkit- sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70vh;
+    padding-bottom: 2em;
+  }
+  .scroll-carousel .column-left .portfolio-menu ul {
+    padding: 0;
+    list-style: none;
+  }
+  .scroll-carousel .column-left .portfolio-menu ul li {
+    padding: 5px 0;
+  }
+  .scroll-carousel .column-left .portfolio-menu ul li a:active {
+    color: white;
+    font-size: 1.5em;
+  }
+  .scroll-carousel .column-left .portfolio-menu ul li a:hover {
+    color: #0056ff;
+    font-size: 1.7em;
+  }
+  .scroll-carousel .column-left .portfolio-menu ul li a {
+    color: white;
+    font-size: 1.3em;
+    transition: all 0.3s ease;
+  }
+  .scroll-carousel .column-right {
+    display: table-cell;
+    float: right;
+    width: 100%;
+    padding-left: 10%;
+  }
+  .scroll-carousel .column-right h4 {
+    color: white;
+    font-family: "Roboto Mono";
+    font-size: 0.7em;
+  }
+  .scroll-carousel .column-right .branding-section {
+    padding-top: 5%;
+    scroll-behavior: smooth;
+  }
+  .scroll-carousel .column-right .imagebox {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 5%;
+    margin-bottom: 7em;
+  }
+  .scroll-carousel .column-right .imagebox img {
+    margin-bottom: 1em;
+  }
+  .scroll-carousel .column-right .imagebox-padded {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 5%;
+    margin-bottom: 7em;
+  }
+  .scroll-carousel .column-right .imagebox-padded img {
+    margin-bottom: 1em;
+    height: 15em;
+  }
+  .scroll-carousel .column-right .line-wrapper {
+    width: 100%;
+    margin-bottom: 7em;
+  }
+  .scroll-carousel .column-right .line-wrapper .line-divider {
+    height: 1px;
+    border: solid white 1px;
+  }
+  .scroll-carousel .column-right .album-covers {
+    scroll-behavior: smooth;
+  }
+  .scroll-carousel .column-right .album-covers .imagebox-padded {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 7em;
+  }
+  .scroll-carousel .column-right .album-covers .imagebox-padded img {
+    margin-bottom: 1em;
+    height: 30em;
+  }
+  .scroll-carousel .column-right .website-section img {
+    border-radius: 8px;
+    transition: all ease-in-out 0.2s;
+    height: 2em;
+    height: 15em;
+  }
+  .scroll-carousel .column-right .website-section img:hover {
+    border: solid 4px #0056ff;
+  }
+  .Portfolio-Title {
+    text-align: center;
+    color: white;
+    margin: 5em 0;
+  }
+  .Portfolio-Title h1 {
+    font-family: "SuisseIntl-Bold";
+    font-size: 4em;
+  }
+  .Menu {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    height: auto;
+    background: #000000;
+    z-index: 1000;
+  }
+  .Menu .Menu-wrapper {
+    color: white;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .Menu .Menu-wrapper a {
+    margin: 0 2em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+  .Menu .Menu-wrapper a:hover {
+    color: #0056ff;
+  }
+  .Menu .Menu-wrapper a:active {
+    color: #0056ff;
+  }
+  .portfolio-section {
+    margin-bottom: 4em;
+  }
+  .portfolio-section .line-divide {
+    margin-bottom: 4em;
+    height: 3px;
+    background-color: white;
+  }
+  .portfolio-section .showcase-box {
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    /*.showcase-background {
+        padding: 5% 10%;
+    }*/
+  }
+  .portfolio-section .showcase-box .Blur-wrap {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5019607843);
+  }
+  .portfolio-section .showcase-box .Blur-wrap h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 5em;
+    color: white;
+  }
+  .portfolio-section .showcase-box .image-wrapper {
+    padding: 5% 10%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+  }
+  .portfolio-section .showcase-box .image-wrapper img {
+    height: auto;
+    width: 100%;
+    max-height: 50vh;
+  }
+  .portfolio-section .showcase-box .image-wrapper-album {
+    padding: 5% 10%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+  }
+  .portfolio-section .showcase-box .image-wrapper-album img {
+    height: auto;
+    max-height: 80vh;
+  }
+  .portfolio-section .showcase-box:hover {
+    transition: 2s opacity ease-in-out;
+    -webkit-transition: 2s -webkit-opacity ease-in-out;
+    -moz-transition: 2s -moz-opacity ease-in-out;
+    -ms-transition: 2s -ms-opacity ease-in-out;
+    -o-transition: 2s -o-opacity ease-in-out;
+  }
+  .portfolio-section .showcase-box:hover .Blur-wrap {
+    opacity: 1;
+  }
+  .showcase-hero {
+    position: relative;
+    height: 70vh;
+  }
+  .showcase-hero .showcase-title {
+    background-color: #0056ff;
+    width: 60%;
+    position: absolute;
+    top: 50vh;
+    height: 40vh;
+    padding: 3em 5em;
+    color: white;
+  }
+  .showcase-hero .showcase-title h1 {
+    font-family: "Sharp Grotesk Book 20";
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 1.2em;
+  }
+  .showcase-hero .showcase-title p {
+    font-family: "SuisseIntl-Thin";
+    font-size: 1.2em;
+  }
+  .showcase-content {
+    padding-top: 20em;
+  }
+  .showcase-content p {
+    font-family: "SuisseIntl-Light";
+    font-size: 1.2em;
+  }
+  .showcase-content .showcase-sub-heading {
+    padding: 0 3em;
+    padding-bottom: 10em;
+  }
+  .showcase-content .showcase-sub-heading h1 {
+    text-align: center;
+    font-family: "SuisseIntl-SemiBold";
+    font-size: 3.5em;
+    line-height: 1em;
+  }
+  .showcase-content .showcase-image {
+    padding-bottom: 10em;
+  }
+  .showcase-content .showcase-image img {
+    padding-bottom: 1em;
+  }
+  .showcase-content .showcase-back {
+    display: flex;
+    margin: auto;
+    padding-bottom: 5em;
+  }
+  .showcase-content .showcase-back a {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-decoration: none;
+    border: solid 4px #0056ff;
+    padding: 0 2em;
+  }
+  .showcase-content .showcase-back a h3 {
+    color: #0056ff;
+    padding: 0 0.5em;
+    font-family: "SuisseIntl-SemiBold";
+    font-size: 2em;
+    margin: 0;
+  }
+  .showcase-content .showcase-back a img {
+    max-height: 3em;
+  }
+  .showcase-content .showcase-back a:hover {
+    background-color: #0056ff;
+  }
+  .showcase-content .showcase-back a:hover h3 {
+    color: white;
+  }
+}/*# sourceMappingURL=main.css.map */
