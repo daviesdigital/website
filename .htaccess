@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteEngine On
+RewriteRule ^About$ about.html [NC,L]
+RewriteRule ^Home$ index.php [NC,L]
+RewriteRule ^Hire-Us$ hire-us.php [NC,L]
+RewriteRule ^Portfolio$ portfolio.html [NC,L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
