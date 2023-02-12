@@ -61,8 +61,7 @@
 
                 <div class="column-right">
                 <div class="form-block">
-                    <form id="contactform" action="https://airform.io/info@daviesdigitaldesign.com" method="POST">
-                        <input name="_redirect" type="hidden" id="name" value="https://daviesdigitaldesign.com/hire-us">
+                    <form id="contactform" action="hire-us.php" method="POST">
                         
                         <label for="name" class="field-label-4">Full Name*</label>
                             <input type="text" class="hire-text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="What should we call you" id="name" required="">
@@ -76,7 +75,7 @@
                         <label class="field-label-4">Brief Project Description*</label>
                             <textarea placeholder="Write away" maxlength="5000" id="message-input" name="message-input" required="" class="text-area-form w-input"></textarea>
 
-                        <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button w-button">  
+                        <input type="submit" value="Submit" name= "submit" data-wait="Please wait..." class="submit-button w-button">  
                     </form>
                     </div>
                 </div>

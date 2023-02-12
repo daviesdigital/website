@@ -1,26 +1,3 @@
-<?php
-
-if (isset($_POST['submit'])) {
-
-$userName = $_POST['name'];
-$userEmail = $_POST['email'];
-$userPhone = $_POST['phone-number'];
-$messageInput = $_POST['message-input'];
-
-$subject = "Form Submission - Contact Us";
-$mailTo = "info@daviesdigitaldesign.com";
-$headers = "From: ".$userEmail;
-$txt = "";
-
-$txt .= "You have recieved an email from ".$userName. "\r\n" ;
-$txt .= "Message: \r\n \r\n".$messageInput;
-
-
-mail( $mailTo, $subject, $txt, $headers );
-header ( "Location: index.php#Contact-us ");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
