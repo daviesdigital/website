@@ -166,14 +166,15 @@
         <div class="contact-title">
             <H1>Contact</H1>
             <ul>
-                <li> <a href="tel:+353 86 323 2181">+353 86 061 2185</a> </li>
-                <li> <a href="mailto:ibi@isabellabiletta.com ">ibi@isabellabiletta.com</a> </li>
+                <li> <a href="tel:+353 86 323 2181">+353 86 323 2181</a> </li>
+                    <li> <a href="mailto:info@daviesdigitaldesign.com">info@daviesdigitaldesign.com</a> </li>
             </ul>
         </div>
 
         <div class="form-block">
-            <form id="contactform" action="index.php" method="POST">
-                <input name="_redirect" type="hidden" id="name" value="#">
+            <form id="contactform" action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="ea7faac0-a636-4dd9-a183-1f19452cc41a"> <!-- Required -->
+                <input name="_redirect" type="hidden" id="name" value="#Contact-us">
                 
                 <label for="name" class="field-label-4">Name*</label>
                     <input type="text" maxlength="256" name="name" data-name="Name" placeholder="What should we call you" id="name" required="">
@@ -186,8 +187,9 @@
 
                 <label class="field-label-4">Shoot Us A Message*</label>
                     <textarea maxlength="5000" id="message-input" name="message-input" placeholder="Write away..."  required=""></textarea>
-                    
-                <input name="_formsubmit_id" type="text" style="display:none">
+
+                  <!-- If we receive data in this field submission will be ignored -->
+                  <input type="text" name="honeypot" style="display: none;">
                 
                 <input type="submit" name="submit" value="Submit" data-wait="Please wait..." class="submit-button w-button">
             </form>
