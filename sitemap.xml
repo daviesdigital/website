@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
-  <loc>http://daviesdigitaldesign.com/</loc>
+  <loc>https://daviesdigitaldesign.com/</loc>
   <lastmod>2020-06-22T19:43:25+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://daviesdigitaldesign.com/home</loc>
+  <loc>https://daviesdigitaldesign.com</loc>
   <lastmod>2020-06-22T19:43:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://daviesdigitaldesign.com/about</loc>
+  <loc>https://daviesdigitaldesign.com/about</loc>
   <lastmod>2020-06-19T12:42:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://daviesdigitaldesign.com/portfolio</loc>
+  <loc>https://daviesdigitaldesign.com/portfolio</loc>
   <lastmod>2020-06-19T12:42:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://daviesdigitaldesign.com/hire-us</loc>
+  <loc>https://daviesdigitaldesign.com/hire-us</loc>
   <lastmod>2020-06-19T12:42:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://daviesdigitaldesign.com/portfolio.html</loc>
+  <loc>https://daviesdigitaldesign.com/portfolio.html</loc>
   <lastmod>2020-06-19T12:42:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
